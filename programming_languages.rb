@@ -13,8 +13,9 @@ def reformat_languages(languages)
         new_hash[lang] = {k => v}
         style_arr << languages
       end
+      new_hash[lang][:styles] = [style_arr]
     end
-    new_hash[lang][:styles] = [style_arr]
+    
   end
   
   new_hash
