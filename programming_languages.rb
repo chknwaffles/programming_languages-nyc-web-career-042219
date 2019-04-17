@@ -14,6 +14,7 @@ def reformat_languages(languages)
       
       if style_arr.include?(languages)
           new_hash[lang][:style] << languages
+          binding.pry
       else 
         new_hash[lang][:style] = [languages]
       end
