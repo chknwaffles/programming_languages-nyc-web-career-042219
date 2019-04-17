@@ -5,23 +5,11 @@ def reformat_languages(languages)
   new_hash = {}
   #style_arr = []
   languages.each do |languages, style|
-    #languages = :oo or :functional
-    #style is the hash
     style.each do |lang, type|
-      #type is value not another hash, make another hash to add value
       type.each do |k, v|
         new_hash[lang] = {k => v}
-        
-        if new_hash.dig(lang, :style) != nil
-          v << languages
-          binding.pry
-        else
-          new_hash[lang][:style] = [languages]
-        end
-        #binding.pry
       end
-      
-      #binding.pry
+      new_hash[lang][:style] = [languages]
     end
     
   end
