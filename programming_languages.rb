@@ -10,7 +10,7 @@ def reformat_languages(languages)
         new_hash[lang] = {k => v}
         if new_hash[lang][:style] == nil
           new_hash[lang][:style] == [languages]
-          
+          binding.pry
         else
           binding.pry
           new_hash[lang][:style] << languages
