@@ -8,8 +8,7 @@ def reformat_languages(languages)
     style.each do |lang, type|
       type.each do |k, v|
         new_hash[lang] = {k => v}
-        
-        
+        style_arr << languages
       end
       
       if style_arr.include?(languages)
