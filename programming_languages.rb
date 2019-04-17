@@ -11,7 +11,7 @@ def reformat_languages(languages)
       #type is value not another hash, make another hash to add value
       type.each do |k, v|
         new_hash[lang] = {k => v}
-        new_hash[lang] = {:styles => []}
+        new_hash[lang] = {:styles => [languages}
         binding.pry
       end
       #new_hash[lang]
