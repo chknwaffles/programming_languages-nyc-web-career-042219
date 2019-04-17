@@ -12,7 +12,7 @@ def reformat_languages(languages)
       type.each do |k, v|
         new_hash[lang] = {k => v}
         
-        if new_hash
+        if new_hash[lang].haskey?
         new_hash[lang][:style] = [languages]
         #binding.pry
       end
