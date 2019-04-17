@@ -14,6 +14,7 @@ def reformat_languages(languages)
         
         if new_hash[lang].has_key?(:style)
           v << languages
+          binding.pry
         else
           new_hash[lang][:style] = [languages]
         end
