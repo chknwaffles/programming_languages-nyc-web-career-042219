@@ -13,12 +13,6 @@ def reformat_languages(languages)
         new_hash[lang] = {k => v}
         style_arr << languages
       end
-      #new_hash[lang]
-      binding.pry
-      
-      binding.pry
-      
-      
     end
   end
   new_hash[lang][:styles] = [style_arr]
