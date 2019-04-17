@@ -11,7 +11,7 @@ def reformat_languages(languages)
       type.each do |k, v|
         new_hash[lang][k] = v
       end
-      new_hash[lang]
+      #new_hash[lang]
       binding.pry
       
       
