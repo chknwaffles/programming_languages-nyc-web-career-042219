@@ -16,7 +16,6 @@ def reformat_languages(languages)
         else
           new_hash[lang][:style] << languages
         end
-        
       end
     end
     
