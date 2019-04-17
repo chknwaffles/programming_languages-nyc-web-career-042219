@@ -15,12 +15,12 @@ def reformat_languages(languages)
       end
       #new_hash[lang]
       binding.pry
-      new_hash[lang][:styles] = [languages]
+      
       binding.pry
       
       
     end
   end
-  
+  new_hash[lang][:styles] = [style_arr]
   new_hash
 end
