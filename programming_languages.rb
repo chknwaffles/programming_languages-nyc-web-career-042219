@@ -8,7 +8,8 @@ def reformat_languages(languages)
     #style is the hash
     style.each do |lang, type|
       #type is value not another hash, make another hash to add value
-      new_hash[lang] = 
+      binding.pry
+      
       
     end
   end
