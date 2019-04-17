@@ -3,6 +3,7 @@ require 'pry'
 def reformat_languages(languages)
   # your code here
   new_hash = {}
+  style_arr = []
   languages.each do |languages, style|
     #languages = :oo or :functional
     #style is the hash
@@ -10,7 +11,7 @@ def reformat_languages(languages)
       #type is value not another hash, make another hash to add value
       type.each do |k, v|
         new_hash[lang] = {k => v}
-        new_hash[lang] = {:style => languages}
+        style_arr << languages
         binding.pry
       end
       #new_hash[lang]
