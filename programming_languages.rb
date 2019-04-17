@@ -12,6 +12,7 @@ def reformat_languages(languages)
       type.each do |k, v|
         new_hash[lang] = {k => v}
         style_arr << languages
+        binding.pry
       end
       new_hash[lang][:styles] = [style_arr]
     end
