@@ -9,7 +9,7 @@ def reformat_languages(languages)
     style.each do |lang, type|
       #type is value not another hash, make another hash to add value
       type.each do |k, v|
-        new_hash[lang]
+        new_hash[lang] = {k => v}
         binding.pry
       end
       #new_hash[lang]
